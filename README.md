@@ -1,4 +1,5 @@
-# DNS-Fender
+# Welcome to DNS-Fender!
+
 # รายละเอียด
 
 DNS-Fender เป็นเครื่องมือที่ออกแบบมาเพื่อทำโจมตีแบบ DNS Amplification โดยใช้ข้อมูล Resolver ที่ได้จาก Shodan. โปรแกรมนี้ถูกพัฒนาขึ้นโดยใช้ Python และสนับสนุนการใช้งานในระบบปฏิบัติการ Windows.
@@ -17,6 +18,8 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 - Shodan API Key
 - Shodan CLI (คำสั่ง `shodan`)
 
+
+## วิธีใช้งาน
 ## การติดตั้ง
 
 1. ติดตั้ง Python 3.x จาก [เว็บไซต์หลักของ Python](https://www.python.org/).
@@ -26,6 +29,7 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 	```
 
 ## การใช้งาน
+
 
  1. #### เปิดหน้าต่าง command prompt:
 	 สำหรับ Windows:
@@ -183,6 +187,4 @@ This program is Open Source and subject to the terms in [LICENSE.md](LICENSE.md)
 If you want to add features or fix bugs, please create a Pull Request or contact the developer. 
 ### Terms and Conditions of Use
 The use of this program constitutes acceptance of all terms and conditions specified in this file.
-
-
 
