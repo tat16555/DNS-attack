@@ -86,7 +86,7 @@ def main():
         args = get_args()
         api_key = args.api_key
         target = args.target
-        shodan_path = r"C:\Users\patrickz\AppData\Roaming\Python\Python311\Scripts\shodan"
+        shodan_path = r"C:\Users\name\AppData\Roaming\Python\Python311\Scripts\shodan"  
 
         # เริ่มต้นใช้ Shodan
         initialize_shodan(api_key, shodan_path)
