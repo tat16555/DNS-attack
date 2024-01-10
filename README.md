@@ -153,7 +153,7 @@ Generally, DNS queries are sent via UDP, which means, similar to ICMP queries us
 
 4. #### Run the program using the command:
     ```bash
-    python DNS-Fender.py -k <api_key> -t <target_host>
+    python DNS-Attack.py -k <api_key> -t <target_host>
     ```
 
     Where `<api_key>` is your Shodan API key, and `<target_host>` is the Target IP or Website.
