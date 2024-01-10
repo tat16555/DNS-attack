@@ -1,5 +1,3 @@
-# Welcome to DNS-Fender!
-
 # รายละเอียด
 
 DNS-Fender เป็นเครื่องมือที่ออกแบบมาเพื่อทำโจมตีแบบ DNS Amplification โดยใช้ข้อมูล Resolver ที่ได้จาก Shodan. โปรแกรมนี้ถูกพัฒนาขึ้นโดยใช้ Python และสนับสนุนการใช้งานในระบบปฏิบัติการ Windows.
