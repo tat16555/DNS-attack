@@ -1,3 +1,5 @@
+# Welcome to DNS-Fender!
+
 # รายละเอียด
 
 DNS-Fender เป็นเครื่องมือที่ออกแบบมาเพื่อทำโจมตีแบบ DNS Amplification โดยใช้ข้อมูล Resolver ที่ได้จาก Shodan. โปรแกรมนี้ถูกพัฒนาขึ้นโดยใช้ Python และสนับสนุนการใช้งานในระบบปฏิบัติการ Windows.
@@ -5,7 +7,9 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 
 ## การขยาย DNS
 
-มีสองเกณฑ์สำหรับเวกเตอร์การโจมตีด้วยการขยายสัญญาณที่ดี: 1) การสืบค้นสามารถตั้งค่าด้วยที่อยู่ต้นทางที่ถูกปลอมแปลง (เช่น ผ่านโปรโตคอลเช่น ICMP หรือ UDP ที่ไม่จำเป็นต้องมีการจับมือกัน); และ 2) การตอบสนองต่อแบบสอบถามมีขนาดใหญ่กว่าแบบสอบถามอย่างมาก DNS เป็นแพลตฟอร์มอินเทอร์เน็ตหลักที่แพร่หลายซึ่งตรงตามเกณฑ์เหล่านี้ ดังนั้นจึงกลายเป็นแหล่งที่มาของการโจมตีแบบขยายสัญญาณที่ใหญ่ที่สุด
+มีสองเกณฑ์สำหรับเวกเตอร์การโจมตีด้วยการขยายสัญญาณที่ดี: 
+1) การสืบค้นสามารถตั้งค่าด้วยที่อยู่ต้นทางที่ถูกปลอมแปลง (เช่น ผ่านโปรโตคอลเช่น ICMP หรือ UDP ที่ไม่จำเป็นต้องมีการจับมือกัน)
+2) การตอบสนองต่อแบบสอบถามมีขนาดใหญ่กว่าแบบสอบถามอย่างมาก DNS เป็นแพลตฟอร์มอินเทอร์เน็ตหลักที่แพร่หลายซึ่งตรงตามเกณฑ์เหล่านี้ ดังนั้นจึงกลายเป็นแหล่งที่มาของการโจมตีแบบขยายสัญญาณที่ใหญ่ที่สุด
 
 โดยทั่วไปแล้ว การสืบค้น DNS จะถูกส่งผ่าน UDP ซึ่งหมายความว่า เช่นเดียวกับการสืบค้น ICMP ที่ใช้ในการโจมตี SMURF การสืบค้นจะเริ่มทำงานและลืมไป เป็นผลให้แอตทริบิวต์แหล่งที่มาสามารถปลอมแปลงได้และผู้รับไม่สามารถระบุความจริงก่อนที่จะตอบสนองได้
 
@@ -21,11 +25,10 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 ## การติดตั้ง
 
 1. ติดตั้ง Python 3.x จาก [เว็บไซต์หลักของ Python](https://www.python.org/).
-2. รันคำสั่ง `pip install -r requirements.txt` เพื่อติดตั้ง dependencies
+2. รันคำสั่งติดตั้ง dependencies
 	```bash
 	pip install -r requirements.txt
-	```
-
+	```				
 ## การใช้งาน
 
 
@@ -67,7 +70,7 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 
 โครงสร้างโฟลเดอร์
 
- - DNS-Fender.py ： ไฟล์ที่ใช้สั่งโจม
+ - DNS-Attack.py ： ไฟล์ที่ใช้สั่งโจม
  - attack_report.txt :  ไฟล์รายงานการโจมตีทั้งหมด.
  - detailed_attack_report.txt :  ไฟล์รายงานการโจมตีที่ละเอียด.
  - DNS-Resolvers.txt :  ไฟล์ที่บันทึก  Resolver  IPs  ที่ได้จาก  Shodan.
@@ -77,8 +80,7 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 โปรแกรมนี้ถูกพัฒนาเพื่อการศึกษาและทดสอบเท่านั้น.  การนำไปใช้ในทางที่ผิดกฎหมายหรือไม่สุจริตทางกฎหมาย  ไม่ได้รับการสนับสนุน.
 
 ผู้จัดทำ
-[Pannatat]
-
+[Tat]
 **หากคุณต้องการเพิ่มฟีเจอร์หรือแก้ไขข้อผิดพลาด**
 > กรุณาสร้าง  Pull  Request  หรือติดต่อผู้จัดทำ.
 
@@ -90,7 +92,6 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 3. ผู้จัดทำไม่รับผิดชอบต่อความเสียหายที่อาจเกิดขึ้นจากการใช้โปรแกรมนี้. 
 ### Contributing หากคุณต้องการเพิ่มฟีเจอร์หรือแก้ไขข้อผิดพลาด, กรุณาสร้าง Pull Request หรือติดต่อผู้จัดทำ. 
 ### ข้อตกลงและเงื่อนไขการใช้งาน การใช้งานโปรแกรมนี้ถือว่าคุณยอมรับข้อตกลงและเงื่อนไขทั้งหมดที่ระบุในไฟล์นี้.
-
 
 
 
@@ -159,10 +160,10 @@ Generally, DNS queries are sent via UDP, which means, similar to ICMP queries us
 
 Folder Structure
 
- - DNS-Fender.py: The file used to initiate attacks.
- - attack_report.txt: The file containing all attack reports.
- - detailed_attack_report.txt: The file containing detailed attack reports.
- - DNS-Resolvers.txt: The file that records Resolver IPs obtained from Shodan.
+ - DNS-Attack.py : The file used to initiate attacks.
+ - attack_report.txt : The file containing all attack reports.
+ - detailed_attack_report.txt : The file containing detailed attack reports.
+ - DNS-Resolvers.txt : The file that records Resolver IPs obtained from Shodan.
 
 Note
 
