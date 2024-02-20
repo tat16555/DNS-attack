@@ -58,7 +58,7 @@ DNS-Fender เป็นเครื่องมือที่ออกแบบ
 	```
 	สำหรับ Linux: 
 	```bash
-	-	cd /path/to/your/folder
+	- cd /path/to/your/folder
 	```
  4. #### รันโปรแกรมโดยใช้คำสั่ง:
 	```bash
